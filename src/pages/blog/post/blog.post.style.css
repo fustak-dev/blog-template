@@ -1,0 +1,154 @@
+.blog-page .banner {
+    position: relative;
+}
+
+.blog-page .content,
+.content {
+    grid-column: 1 / -1;
+    max-width: 720px;
+}
+
+.blog-page .content-centered,
+.content-centered {
+    grid-column: 1 / -1;
+}
+
+.blog h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin: 0 0 32px;
+}
+
+.blog h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 32px;
+}
+
+.blog h3 {
+    font-size: 24px;
+    line-height: 64px;
+}
+
+.blog h4 {
+    font-size: 20px;
+    line-height: 64px;
+}
+
+.blog hr {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    height: .25em;
+    padding: 0;
+    background-color: #000;
+}
+
+.blog p,
+.blog ul,
+.blog ol,
+.blog dl,
+.blog blockquote,
+.blog table,
+.blog pre {
+    margin: 0 0 32px 0;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.blog ol {
+    list-style: decimal;
+}
+
+.blog ul {
+    list-style: disc;
+}
+
+.blog li {
+    margin: 0;
+}
+
+.blog li p {
+    margin: 0;
+}
+
+.blog table {
+    border-top: 1px solid #1f2937;
+    display: inline-block;
+    font-size: .8rem;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.blog table code {
+    font-size: 0.75rem;
+}
+
+.blog thead tr,
+.blog tbody tr {
+    border-bottom: 1px solid #1f2937;
+}
+
+.blog th {
+    font-weight: 600;
+    line-height: 2;
+}
+
+.blog td {
+    line-height: 1.25;
+}
+
+.blog th,
+.blog td {
+    padding: 16px;
+}
+
+.blog .caution {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 8px;
+    border-left: 3px solid #ee9d2b;
+    background-color: #ffecbc;
+}
+
+.blog .info {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 8px;
+    border-left: 3px solid #65ba75;
+    background-color: #dff3df;
+}
+
+.blog .danger {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 8px;
+    border-left: 3px solid #eb9091;
+    background-color: #ffe5e5;
+}
+
+.blog .note {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 8px;
+    border-left: 3px solid #c1c8cd;
+    background-color: #eceef0;
+}
+
+.blog .tip {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 8px;
+    border-left: 3px solid #3db9cf;
+    background-color: #d8f3f6;
+}

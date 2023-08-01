@@ -1,0 +1,31 @@
+[page.default]
+file = "../_default.page.toml"
+
+[page.builder]
+page = "admin.page.js"
+path = "/0/admin"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = 'frame-ancestors'
+
+[page.definition]
+title = 'Admin | Fustak'
+canonical = 'https://###URL###/0/admin'
+
+[page.definition.metas]
+description = ''
+keywords = ''
+"og:title" = ''
+"og:type" = ''
+"og:url" = ''
+"og:image" = ''
+"og:description" = ''
+"og:site_name" = ''
+"twitter:card" = ''
+"twitter:site" = ''
+"twitter:title" = ''
+"twitter:description" = ''
+"twitter:image" = ''
+"twitter:image:alt" = ''

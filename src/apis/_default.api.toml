@@ -1,0 +1,9 @@
+[api.builder]
+active = true
+service = ""
+api = ""
+method = "GET"
+path = ""
+
+[api.builder.headers]
+Access-Control-Allow-Origin = '*'

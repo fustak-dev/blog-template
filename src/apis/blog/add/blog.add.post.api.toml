@@ -1,0 +1,9 @@
+[api.default]
+file = "../../_default.api.toml"
+
+[api.builder]
+active = true
+service = "blog.post.service"
+api = "blog.add.post.api.js"
+method = "PUT"
+path = "/admin/blog/posts"

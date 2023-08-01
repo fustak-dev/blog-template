@@ -1,0 +1,40 @@
+.save {
+    background: blue;
+    border: 0;
+    color: #fff;
+    height: 32px;
+    padding: 0 16px;
+    right: 32px;
+    top: 16px;
+}
+
+.save:hover,
+.save:focus {
+    background: darkblue;
+}
+
+.save:active {
+    background: #0000c8;
+    transform: scale(0.98);
+}
+
+.auto-save {
+    align-items: center;
+    color: green;
+    height: 32px;
+    line-height: 1.15;
+    margin: 0;
+    right: 32px;
+    top: 16px;
+}
+
+/* Editor */
+
+._editorWrapper_3tbtr_149 {
+    padding: 0 !important;
+}
+
+._editorRoot_3tbtr_47 {
+    --baseBgSubtle: #e3e7ea !important;
+    --baseBgHover: #fff !important;
+}

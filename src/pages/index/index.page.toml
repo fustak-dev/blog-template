@@ -1,0 +1,11 @@
+[page.default]
+file = "../_default.page.toml"
+
+[page.builder]
+page = "index.page.js"
+path = "/"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = 'frame-ancestors'

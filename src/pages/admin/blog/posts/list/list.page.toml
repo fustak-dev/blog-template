@@ -1,0 +1,27 @@
+[page.default]
+file = "../../../../_default.page.toml"
+
+[page.template]
+path = '../../../../_default.page.html'
+
+[page.builder]
+page = "list.page.js"
+path = "/0/admin/blog/posts"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = 'frame-ancestors'
+
+[page.definition]
+title = 'Posts | Fustak'
+canonical = 'https://###URL###/0/admin/blog/posts'
+styles = [
+    '../../../../styles/normalize.css',
+    '../../../../styles/reset.css',
+    '../../../../styles/styles.css',
+]
+
+[[page.definition.scripts]]
+src = 'dist(/pages/list.posts.island.js)'
+async = true

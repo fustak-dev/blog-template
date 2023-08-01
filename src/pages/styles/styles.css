@@ -1,0 +1,169 @@
+/* Default styles */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fafafa;
+    color: #21211f;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #21211f;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+pre {
+    border-left: 4px solid #21211f;
+    padding: 0;
+    margin: 0 0 32px;
+    overflow-y: hidden;
+}
+
+code {
+    border-radius: .4rem;
+    margin: 0 .2rem;
+    padding: .2rem .5rem;
+    white-space: nowrap
+}
+
+pre,
+pre>code,
+code {
+    background: #e7e7e7;
+    font-size: 16px;
+    line-height: 2;
+}
+
+pre>code {
+    border-radius: 0;
+    display: block;
+    padding: 16px;
+    white-space: pre
+}
+
+a {
+    color: #21211f;
+    text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+    p {
+        overflow-wrap: normal !important;
+    }
+}
+
+/* Columns */
+
+.grid-columns-container {
+    --grid-gap: 2rem;
+    --grid-margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+    padding-right: 32px;
+    padding-left: 32px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+@media (min-width: 768px) {
+
+    .grid-columns-container {
+        --grid-gap: 1.5rem;
+        --grid-margin: 3rem;
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .grid-columns-container {
+        --grid-gap: 2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .grid-columns-container {
+        --grid-margin: 4rem;
+    }
+}
+
+.grid-columns-content {
+    grid-column: 1 / -1;
+}
+
+/* Rows */
+
+.grid-rows-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100%;
+}
+
+
+/* Utils */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* only for dev */
+.background-grid {
+    background-image: linear-gradient(#cac4c8 0.5px, transparent 0.5px, transparent calc(100% - 0.5px));
+    background-size: 100% 32px;
+}

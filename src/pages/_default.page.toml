@@ -1,0 +1,34 @@
+[page.builder]
+active = true
+page = ""
+path = ""
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Cache-Control = 'public, max-age=600'
+Content-Security-Policy = "default-src 'self' 'nonce-fustak'; frame-ancestors"
+
+[page.template]
+path = '../_default.page.html'
+
+[page.definition]
+lang = 'en'
+title = 'Title'
+canonical = ''
+
+[page.definition.metas]
+description = ''
+keywords = ''
+"og:title" = ''
+"og:type" = ''
+"og:url" = ''
+"og:image" = ''
+"og:description" = ''
+"og:site_name" = ''
+"twitter:card" = ''
+"twitter:site" = ''
+"twitter:title" = ''
+"twitter:description" = ''
+"twitter:image" = ''
+"twitter:image:alt" = ''

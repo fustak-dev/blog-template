@@ -1,0 +1,33 @@
+[page.default]
+file = "../../../../_default.page.toml"
+
+[page.template]
+path = '../../../../_default.page.html'
+
+[page.builder]
+page = "edit.page.js"
+path = "/0/admin/blog/posts/:slug"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = 'frame-ancestors'
+
+[page.definition]
+title = 'Post Edit | Fustak'
+canonical = 'https://###URL###/0/admin/blog/posts/__SLUG__'
+styles = [
+    '../../../../styles/normalize.css',
+    '../../../../styles/reset.css',
+    '../../../../styles/styles.css',
+    '../../../../components/switch.css',
+    './edit.style.css',
+    '../../../../../../node_modules/@mdxeditor/editor/dist/style.css',
+]
+
+[[page.definition.stylesheets]]
+href = 'asset(/styles/prose.css)'
+
+[[page.definition.scripts]]
+src = 'dist(/pages/edit.posts.island.js)'
+async = true

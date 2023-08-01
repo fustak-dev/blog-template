@@ -1,0 +1,41 @@
+[page.default]
+file = "../../_default.page.toml"
+
+[page.template]
+path = '../../_default.page.html'
+
+[page.builder]
+page = "blog.post.page.js"
+path = "/blog/:slug"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = "frame-ancestors 'none';"
+
+[page.definition]
+title = '__TITLE__ · Fustak Blog'
+canonical = 'https://###URL###/blog/__CANONICAL__'
+styles = [
+    '../../styles/normalize.css',
+    '../../styles/reset.css',
+    '../../styles/styles.css',
+    './blog.post.style.css',
+]
+
+[page.definition.metas]
+description = "__DESCRIPTION__"
+"og:title" = '__TITLE__ · Fustak Blog'
+"og:type" = 'website'
+"og:url" = 'https://###URL###/blog/__CANONICAL__'
+"og:image:type" = 'image/png'
+"og:image" = '__IMAGE__'
+"og:description" = "__DESCRIPTION__"
+"og:site_name" = 'Fustak'
+"twitter:card" = 'summary_large_image'
+"twitter:site" = '@fustakdev'
+"twitter:creator" = '@fustakdev'
+"twitter:title" = '__TITLE__ · Fustak Blog'
+"twitter:description" = "__DESCRIPTION__"
+"twitter:image" = '__IMAGE__'
+"twitter:image:alt" = '__TITLE__ · Fustak Blog'
